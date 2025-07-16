@@ -21,10 +21,10 @@
 
 > **"Con questi trucchi, Claude Code non mi ha scritto un singolo bug in mesi"**
 
-Questa guida nasce dall'esperienza di **12 ore al giorno** di utilizzo di Claude Code per sviluppare app che generano **€300.000 all'anno**. Non teoria, ma strategie testate sul campo.
+Questa guida nasce dall'esperienza di **8 ore al giorno** di utilizzo di Claude Code per sviluppare app e non solo. Non teoria, ma strategie testate sul campo.
 
 ### 🎯 Cosa Imparerai
-- ✅ **Zero bug** nel codice generato
+- ✅ **98%** di errori in meno nel codice generato
 - ✅ **10x velocità** di sviluppo
 - ✅ **Codice enterprise-grade** dall'AI
 - ✅ **Risparmio sui costi** di utilizzo
