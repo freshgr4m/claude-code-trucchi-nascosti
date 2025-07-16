@@ -17,7 +17,7 @@
 
 Claude Code è uno strumento potente per lo sviluppo assistito da AI. Questa guida raccoglie le tecniche più efficaci per massimizzarne l'utilizzo, ridurre i bug e migliorare la produttività.
 
-Le strategie presentate sono il risultato di mesi di utilizzo quotidiano e test sul campo, pensate per trasformare il tuo workflow di sviluppo.
+Le strategie presentate sono il risultato di mesi di utilizzo quotidiano e test sul campo, pensate per trasformare il mio workflow personale di sviluppo.
 
 ---
 
