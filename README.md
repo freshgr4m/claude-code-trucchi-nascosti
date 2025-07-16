@@ -726,10 +726,7 @@ Questa guida è open source e cresce con la community italiana di sviluppatori. 
 
 ---
 
-*Made with ❤️ in Italy • Ultima modifica: Gennaio 2025*
+*Made with ❤️ to Rome • Ultima modifica: Luglio 2025*
 
----
-
-*🇮🇹 Made with ❤️ in Italy • Ultima modifica: Gennaio 2025*
 
 </div>
