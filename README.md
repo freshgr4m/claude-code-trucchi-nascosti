@@ -716,7 +716,7 @@ Questa guida è open source e cresce con la community italiana di sviluppatori. 
 
 <div align="center">
 
-**Autore**: Francesco Mancino  
+**Autore**: Francesco Fresco Mancino  
 **Ubicazione**: Roma, Italia  
 **Contatto**: [mancino22@gmail.com](mailto:mancino22@gmail.com)
 
