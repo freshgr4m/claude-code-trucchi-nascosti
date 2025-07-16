@@ -339,12 +339,13 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 - Mobile nativo (Swift/Kotlin)
 - Low-level languages (C++/Rust)
 
-### Quanto costa utilizzare Claude Code?
+Quanto costa utilizzare Claude Code?
+Piani disponibili:
 
-**Piani disponibili:**
-- **Free**: 10 messaggi/giorno
-- **Pro ($20/mese)**: 100 messaggi/giorno  
-- **Team ($25/mese)**: 500 messaggi/giorno
+Free: 10 messaggi/giorno
+Pro ($20/mese): 100 messaggi/giorno
+Team ($25/mese): 500 messaggi/giorno
+Con le tecniche di ottimizzazione, il risparmio 
 
 Con le tecniche di ottimizzazione, il risparmio può essere del 50-70%.
 
