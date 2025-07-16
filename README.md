@@ -728,9 +728,10 @@ Questa guida è open source e cresce con la community italiana di sviluppatori. 
 
 *Made with ❤️ in Italy • Ultima modifica: Gennaio 2025*
 
-</div>ino--dev-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/francesco-mancino-dev/)
+**Link utili:**
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-francesco--mancino--dev-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/francesco-mancino-dev/)
 [![Twitter](https://img.shields.io/badge/Twitter-@freshgr4m-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/freshgr4m)
-[![GitHub](https://img.shields.io/badge/GitHub-Issues-black?style=flat-square&logo=github)](https://github.com/freshgr4m/claude-code-pro/issues)
+[![GitHub](https://img.shields.io/badge/GitHub-freshgr4m-black?style=flat-square&logo=github)](https://github.com/freshgr4m?tab=repositories)
 
 ---
 
