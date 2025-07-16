@@ -2,10 +2,10 @@
 
 <div align="center">
 
-[![Made with ❤️ in Italy](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge&logo=italy)](https://github.com/tuousername)
+[![Made with ❤️ in Italy](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge&logo=italy)](https://github.com/freshgr4m)
 [![Language](https://img.shields.io/badge/Language-Italiano-green?style=for-the-badge)](README.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/tuousername/claude-code-pro?style=for-the-badge)](https://github.com/tuousername/claude-code-pro)
+[![Stars](https://img.shields.io/github/stars/freshgr4m/claude-code-pro?style=for-the-badge)](https://github.com/freshgr4m/claude-code-pro)
 
 **La guida definitiva per diventare un ninja di Claude Code**
 
@@ -212,7 +212,7 @@ git reset --hard HEAD~1
 git init
 git add .
 git commit -m "🎉 Initial commit"
-git remote add origin https://github.com/tuousername/progetto.git
+git remote add origin https://github.com/freshgr4m/progetto.git
 git push -u origin main
 
 # Workflow quotidiano
@@ -749,9 +749,9 @@ Un grazie speciale a tutti i contributors che rendono questa guida sempre miglio
 
 ### 📧 Contatti
 
-- **Email**: tuoemail@example.com
-- **LinkedIn**: [Il tuo profilo]
-- **Twitter**: [@tuousername]
+- **Email**: mancino22@gmail.com
+- **LinkedIn**: [(https://www.linkedin.com/in/francesco-mancino-dev/)]
+- **Twitter**: [@freshgr4m]
 
 ---
 
@@ -767,9 +767,9 @@ MIT License - Usa, modifica, condividi liberamente!
 
 ## 🙏 Crediti
 
+- **Autore**: Francesco Mancino 🇮🇹 Roma
 - **Ispirazione**: Video originale sulla strategia Claude Code
 - **Testing**: Community di sviluppatori italiani
-- **Feedback**: 50+ beta testers
 - **Supporto**: La fantastica community open source
 
 ---
@@ -780,9 +780,9 @@ MIT License - Usa, modifica, condividi liberamente!
 
 **Non aspettare. Ogni giorno senza questi trucchi è produttività persa.**
 
-[![⭐ Star su GitHub](https://img.shields.io/badge/⭐-Star%20su%20GitHub-yellow?style=for-the-badge)](https://github.com/tuousername/claude-code-pro)
-[![🔄 Fork Repository](https://img.shields.io/badge/🔄-Fork%20Repository-blue?style=for-the-badge)](https://github.com/tuousername/claude-code-pro/fork)
-[![💬 Join Community](https://img.shields.io/badge/💬-Join%20Community-green?style=for-the-badge)](https://github.com/tuousername/claude-code-pro/discussions)
+[![⭐ Star su GitHub](https://img.shields.io/badge/⭐-Star%20su%20GitHub-yellow?style=for-the-badge)](https://github.com/freshgr4m/claude-code-pro)
+[![🔄 Fork Repository](https://img.shields.io/badge/🔄-Fork%20Repository-blue?style=for-the-badge)](https://github.com/freshgr4m/claude-code-pro/fork)
+[![💬 Join Community](https://img.shields.io/badge/💬-Join%20Community-green?style=for-the-badge)](https://github.com/freshgr4m/claude-code-pro/discussions)
 
 ### 💰 Risultati Garantiti o Rimborso*
 
