@@ -2,10 +2,6 @@
 
 <div align="center">
 
-[![Made with ❤️ in Italy](https://img.shields.io/badge/Made%20with-❤️-red?style=flat-square)](https://github.com/freshgr4m)
-[![Language](https://img.shields.io/badge/Language-Italiano-green?style=flat-square)](README.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
-
 *Una collezione di tecniche e strategie per utilizzare Claude Code in modo efficace.*  
 *Basata su esperienza pratica di sviluppo quotidiano.*
 
