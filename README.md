@@ -722,15 +722,11 @@ Questa guida è open source e cresce con la community italiana di sviluppatori. 
 
 **Link utili:**
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-francesco--mancino--dev-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/francesco-mancino-dev/)
-[![GitHub](https://img.shields.io/badge/GitHub-Issues-black?style=flat-square&logo=github)](https://github.com/freshgr4m/claude-code-pro/issues)
+[![GitHub](https://img.shields.io/badge/GitHub-Issues-black?style=flat-square&logo=github)](https://github.com/freshgr4m/claude-code-trucchi-nascosti/issues)
 
 ---
 
 *Made with ❤️ in Italy • Ultima modifica: Gennaio 2025*
-
-**Link utili:**
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-francesco--mancino--dev-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/francesco-mancino-dev/)
-[![GitHub](https://img.shields.io/badge/GitHub-Issues-black?style=flat-square&logo=github)](https://github.com/freshgr4m/claude-code-trucchi-nascosti/issues)
 
 ---
 
