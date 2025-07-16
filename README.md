@@ -1,4 +1,4 @@
-# 🤖 Claude Code: Guida Italiana
+# Claude Code: Guida Italiana
 
 <div align="center">
 
@@ -13,23 +13,27 @@
 
 ---
 
-## 🎯 Introduzione
+## Introduzione
 
 Claude Code è uno strumento potente per lo sviluppo assistito da AI. Questa guida raccoglie le tecniche più efficaci per massimizzarne l'utilizzo, ridurre i bug e migliorare la produttività.
 
+Le strategie presentate sono il risultato di mesi di utilizzo quotidiano e test sul campo, pensate per trasformare il tuo workflow di sviluppo.
+
 ---
 
-## 🚀 Installazione
+## Installazione
+
+Prima di iniziare, è necessario configurare l'ambiente di sviluppo con Cursor AI e Claude Code. Il processo varia leggermente in base al sistema operativo.
 
 ### Prerequisiti
 
-> ✅ Account Claude attivo  
-> ✅ Cursor AI installato
+> Account Claude attivo  
+> Cursor AI installato
 
 ### Setup per Sistema Operativo
 
 <details>
-<summary><strong>🍎 macOS</strong></summary>
+<summary><strong>macOS</strong></summary>
 
 ```bash
 # Installa Cursor AI
@@ -39,14 +43,14 @@ curl -fsSL https://cursor.sh/install.sh | sh
 </details>
 
 <details>
-<summary><strong>🪟 Windows</strong></summary>
+<summary><strong>Windows</strong></summary>
 
 Scarica l'installer da [cursor.sh](https://cursor.sh) ed esegui il file `.exe`.
 
 </details>
 
 <details>
-<summary><strong>🐧 Linux</strong></summary>
+<summary><strong>Linux</strong></summary>
 
 ```bash
 # Ubuntu/Debian
@@ -61,7 +65,7 @@ cursor --version
 
 </details>
 
-### ⚙️ Configurazione in Cursor
+### Configurazione in Cursor
 
 1. Apri **Settings** → **Extensions**
 2. Cerca e installa **Claude Code**
@@ -69,34 +73,36 @@ cursor --version
 
 ---
 
-## 📝 Configurazione
+## Configurazione
+
+La configurazione corretta è fondamentale per ottenere risultati ottimali. Il file `claude.md` è il cuore del sistema: definisce regole e comportamenti che Claude seguirà automaticamente.
 
 ### Il File claude.md
 
-> 💡 **Suggerimento**: Questo file viene letto automaticamente da Claude Code ad ogni prompt.
+> **Suggerimento**: Questo file viene letto automaticamente da Claude Code ad ogni prompt.
 
 Crea un file `claude.md` nella root del progetto:
 
 ```markdown
-# 🤖 Regole di Sviluppo
+# Regole di Sviluppo
 
-## 🎯 Comportamento
+## Comportamento
 - Dividi ogni task in micro-operazioni
 - Chiedi conferma prima di procedere
 - Documenta ogni decisione importante
 
-## 💻 Codice
+## Codice
 - Usa nomenclatura chiara e consistente
 - Includi commenti per logiche complesse
 - Ottimizza per leggibilità e performance
 
-## 🔒 Sicurezza
+## Sicurezza
 - Mai secrets nel frontend
 - Valida tutti gli input
 - Implementa proper error handling
 ```
 
-### 🔧 Variabili d'Ambiente
+### Variabili d'Ambiente
 
 ```bash
 # .env.example
@@ -106,9 +112,9 @@ DATABASE_URL=your_database_url
 
 ---
 
-## 🎯 Modalità Plan
+## Modalità Plan
 
-> 🎪 **Best Practice**: La modalità Plan è particolarmente utile per task complessi.
+La modalità Plan è una delle funzionalità più potenti di Claude Code. Permette di strutturare il lavoro prima dell'esecuzione, riducendo errori e migliorando la qualità del codice finale.
 
 ### Attivazione
 
@@ -133,19 +139,19 @@ Shift + Tab + Tab
 </tr>
 </table>
 
-### 🧠 Strategia dei Modelli
+### Strategia dei Modelli
 
-> 💰 **Ottimizzazione**: Usa modelli diversi per massimizzare qualità e ridurre costi.
+> **Ottimizzazione**: Usa modelli diversi per massimizzare qualità e ridurre costi.
 
-| Fase | Modello | Comando |
-|------|---------|---------|
-| 🎯 **Pianificazione** | Opus | `/mod opus` |
-| ⚡ **Esecuzione** | Sonnet | `/mod sonnet` |
+| Fase | Modello | Comando | Scopo |
+|------|---------|---------|-------|
+| **Pianificazione** | Opus | `/mod opus` | Massima precisione |
+| **Esecuzione** | Sonnet | `/mod sonnet` | Velocità + risparmio |
 
-### 📖 Esempio Pratico
+### Esempio Pratico
 
 <details>
-<summary><strong>🛠️ Creazione API REST (click per espandere)</strong></summary>
+<summary><strong>Creazione API REST (click per espandere)</strong></summary>
 
 ```markdown
 # Input in Plan Mode
@@ -163,27 +169,29 @@ Shift + Tab + Tab
 
 ---
 
-## 🧹 Gestione del Contesto
+## Gestione del Contesto
+
+Il contesto accumula informazioni durante la conversazione, ma può diventare confuso o costoso. La gestione intelligente del contesto è cruciale per mantenere performance e precisione ottimali.
 
 ### Comando /clear
 
-> ⚠️ **Importante**: Usare `/clear` regolarmente migliora precisione e riduce costi.
+> **Importante**: Usare `/clear` regolarmente migliora precisione e riduce costi.
 
 **Quando usare `/clear`:**
 
-- ✅ Completi un task importante
-- ✅ Cambi argomento o funzionalità  
-- ✅ Noti risposte inconsistenti
-- ✅ Dopo 30-45 minuti di lavoro continuo
+- Completi un task importante
+- Cambi argomento o funzionalità  
+- Noti risposte inconsistenti
+- Dopo 30-45 minuti di lavoro continuo
 
 ```bash
 # Pulisci il contesto
 /clear
 ```
 
-### 🚨 Indicatori per Clearing
+### Indicatori per Clearing
 
-| 🔴 **Segnali di Allarme** | 🟢 **Stato Ottimale** |
+| **Segnali di Allarme** | **Stato Ottimale** |
 |---------------------------|------------------------|
 | Risposte sempre più lunghe | Risposte concise e precise |
 | Ripetizioni di codice | Codice unico e mirato |
@@ -192,22 +200,22 @@ Shift + Tab + Tab
 
 ---
 
-## 🖼️ Utilizzo delle Immagini
+## Utilizzo delle Immagini
 
-> 🎨 **Visual Coding**: Claude Code può analizzare screenshot per comprendere design e debug visuale.
+Claude Code può analizzare screenshot per comprendere layout, design e identificare problemi visivi. Questa funzionalità è particolarmente utile per debug UI e ispirazione design.
 
-### 📸 Shortcuts Screenshot
+### Shortcuts Screenshot
 
 | OS | Shortcut |
 |:---:|:---:|
-| 🍎 **macOS** | `Cmd + Shift + 4` |
-| 🪟 **Windows** | `Win + Shift + S` |
-| 🐧 **Linux** | `Ctrl + Shift + Print` |
+| **macOS** | `Cmd + Shift + 4` |
+| **Windows** | `Win + Shift + S` |
+| **Linux** | `Ctrl + Shift + Print` |
 
-### 🎯 Casi d'Uso
+### Casi d'Uso
 
 <details>
-<summary><strong>🎨 Design Inspiration</strong></summary>
+<summary><strong>Design Inspiration</strong></summary>
 
 ```markdown
 "Analizza questo design di [app] e crea un componente simile 
@@ -217,7 +225,7 @@ usando React e Tailwind CSS"
 </details>
 
 <details>
-<summary><strong>🔧 Debug Visuale</strong></summary>
+<summary><strong>Debug Visuale</strong></summary>
 
 ```markdown
 "Questo layout non funziona correttamente. Basandoti sullo 
@@ -228,9 +236,9 @@ screenshot, sistema il CSS per centrare gli elementi"
 
 ---
 
-## 🔒 Sicurezza
+## Sicurezza
 
-> 🛡️ **Security First**: La sicurezza deve essere integrata nel workflow, non aggiunta dopo.
+La sicurezza non deve essere un ripensamento, ma integrata nel workflow quotidiano. Claude Code può aiutare a identificare vulnerabilità comuni, ma è importante seguire un processo sistematico.
 
 ### Security Check
 
@@ -245,7 +253,7 @@ Dopo ogni feature, esegui un controllo di sicurezza:
 - Error handling sicuro"
 ```
 
-### ✅ Checklist di Sicurezza
+### Checklist di Sicurezza
 
 - [ ] Secrets solo nel backend/env
 - [ ] Input validation su tutti i campi
@@ -257,21 +265,23 @@ Dopo ogni feature, esegui un controllo di sicurezza:
 
 ---
 
-## 🔄 Workflow di Sviluppo
+## Workflow di Sviluppo
+
+Un workflow strutturato garantisce consistenza e qualità. Questo ciclo si basa su anni di best practices nello sviluppo software, adattate per l'era dell'AI.
 
 ### Ciclo Completo
 
 ```mermaid
 graph LR
-    A[🎯 Plan] --> B[⚡ Execute]
-    B --> C[🔒 Secure]
-    C --> D[💾 Commit]
-    D --> E[🧹 Clear]
-    E --> F[🔄 Repeat]
+    A[Plan] --> B[Execute]
+    B --> C[Secure]
+    C --> D[Commit]
+    D --> E[Clear]
+    E --> F[Repeat]
     F --> A
 ```
 
-### 🐙 Git Integration
+### Git Integration
 
 <details>
 <summary><strong>Setup Iniziale</strong></summary>
@@ -295,23 +305,25 @@ git push
 
 </details>
 
-### 📝 Convenzioni Commit
+### Convenzioni Commit
 
-| Tipo | Emoji | Descrizione |
-|:---:|:---:|:---|
-| **Feature** | ✨ | Nuove funzionalità |
-| **Fix** | 🐛 | Correzione bug |
-| **Refactor** | ♻️ | Refactoring codice |
-| **Docs** | 📝 | Aggiornamenti documentazione |
-| **Style** | 🎨 | Modifiche UI/styling |
+Le convenzioni commit aiutano a mantenere una cronologia pulita e comprensibile del progetto:
+
+| Tipo | Prefisso | Descrizione | Esempio |
+|:---:|:---:|:---|:---|
+| **Feature** | `feat:` | Nuove funzionalità | `feat: add user authentication` |
+| **Fix** | `fix:` | Correzione bug | `fix: resolve login validation` |
+| **Refactor** | `refactor:` | Ristrutturazione codice | `refactor: optimize API calls` |
+| **Docs** | `docs:` | Aggiornamenti documentazione | `docs: update API reference` |
+| **Style** | `style:` | Formattazione, CSS | `style: improve button layout` |
 
 ---
 
-## 📚 Apprendimento
+## Apprendimento
 
-### 🎓 Learning Prompt
+Comprendere il codice generato da Claude è essenziale per diventare uno sviluppatore più efficace. Non limitarti a copiare: impara dai pattern e dalle soluzioni proposte.
 
-> 🧠 **Pro Tip**: Comprendere il codice generato ti rende un utilizzatore migliore.
+### Learning Prompt
 
 ```markdown
 "Spiegami il codice come se fossi un mentor esperto:
@@ -322,27 +334,27 @@ git push
 - Possibili miglioramenti futuri"
 ```
 
-### 📈 Progressione
+### Progressione
 
 ```mermaid
 graph TD
-    A[📋 Copy-Paste] --> B[🧠 Comprensione]
-    B --> C[🔧 Modifica]
-    C --> D[🚀 Creazione]
+    A[Copy-Paste] --> B[Comprensione]
+    B --> C[Modifica]
+    C --> D[Creazione]
 ```
 
-1. **📋 Copy-Paste**: Usa il codice generato così com'è
-2. **🧠 Comprensione**: Capisci cosa fa il codice
-3. **🔧 Modifica**: Piccoli aggiustamenti autonomi
-4. **🚀 Creazione**: Sviluppo indipendente
+1. **Copy-Paste**: Usa il codice generato così com'è
+2. **Comprensione**: Capisci cosa fa il codice
+3. **Modifica**: Piccoli aggiustamenti autonomi
+4. **Creazione**: Sviluppo indipendente
 
 ---
 
-## ⚡ Ottimizzazione della Produttività
+## Ottimizzazione della Produttività
 
-### 💬 Chat Produttiva
+Claude Code richiede tempo per elaborare richieste complesse. Invece di perdere tempo, trasforma questi momenti in opportunità di crescita professionale.
 
-> 🎯 **Anti-Procrastination**: Trasforma i tempi morti in opportunità di crescita.
+### Chat Produttiva
 
 Durante i tempi di attesa di Claude Code, usa una chat separata per:
 
@@ -354,13 +366,13 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 - Strategia di business"
 ```
 
-### 🚫 Evita Distrazioni vs ✅ Attività Produttive
+### Gestione delle Distrazioni
 
 <table>
 <tr>
 <td width="50%">
 
-**🔴 Vietato durante le pause:**
+**Evita durante le pause:**
 - Social media
 - Video casuali  
 - News browsing
@@ -368,7 +380,7 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 </td>
 <td width="50%">
 
-**🟢 Permesso:**
+**Attività produttive:**
 - Pianificazione progetto
 - Research tecnico
 - Documentazione
@@ -379,9 +391,11 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 
 ---
 
-## 🛠️ Esempi Pratici
+## Esempi Pratici
 
-### 📱 Todo App con React
+Questi esempi mostrano l'applicazione pratica delle tecniche descritte in scenari reali di sviluppo.
+
+### Todo App con React
 
 <details>
 <summary><strong>Plan Mode Input (click per espandere)</strong></summary>
@@ -399,7 +413,7 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 
 </details>
 
-### 🌐 API REST con Node.js
+### API REST con Node.js
 
 <details>
 <summary><strong>Plan Mode Input (click per espandere)</strong></summary>
@@ -420,12 +434,12 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
-### ⚠️ Problemi Comuni
+Problemi comuni e relative soluzioni basate sull'esperienza pratica di utilizzo quotidiano.
 
 <details>
-<summary><strong>🤖 Claude non risponde correttamente</strong></summary>
+<summary><strong>Claude non risponde correttamente</strong></summary>
 
 **Soluzioni:**
 - Usa `/clear` per pulire contesto
@@ -435,7 +449,7 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 </details>
 
 <details>
-<summary><strong>🐛 Codice con bug frequenti</strong></summary>
+<summary><strong>Codice con bug frequenti</strong></summary>
 
 **Soluzioni:**
 - Assicurati di avere `claude.md` configurato
@@ -445,7 +459,7 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 </details>
 
 <details>
-<summary><strong>💸 Costi elevati</strong></summary>
+<summary><strong>Costi elevati</strong></summary>
 
 **Soluzioni:**
 - Usa strategia Opus/Sonnet
@@ -456,15 +470,15 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 
 ---
 
-## ❓ FAQ
+## FAQ
 
-### 🔧 Claude Code funziona con tutti i linguaggi?
+### Claude Code funziona con tutti i linguaggi?
 
 <table>
 <tr>
 <td width="50%">
 
-**✅ Ottimo supporto:**
+**Ottimo supporto:**
 - JavaScript/TypeScript
 - Python
 - React/Vue/Angular
@@ -474,7 +488,7 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 </td>
 <td width="50%">
 
-**⚠️ Supporto limitato:**
+**Supporto limitato:**
 - Mobile nativo (Swift/Kotlin)
 - Low-level languages (C++/Rust)
 
@@ -482,7 +496,7 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 </tr>
 </table>
 
-### 💰 Quanto costa utilizzare Claude Code?
+### Quanto costa utilizzare Claude Code?
 
 **Piani disponibili (2025):**
 
@@ -495,11 +509,11 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 
 <sub>*Sconto disponibile con fatturazione annuale</sub>
 
-> 💡 **Risparmio**: Con le tecniche di ottimizzazione, il risparmio può essere del 50-70%.
+> **Risparmio**: Con le tecniche di ottimizzazione, il risparmio può essere del 50-70%.
 
-### 🔒 È sicuro per progetti commerciali?
+### È sicuro per progetti commerciali?
 
-**✅ Sì, seguendo le best practices:**
+**Sì, seguendo le best practices:**
 - Security check regolari
 - Mai dati sensibili nei prompt
 - Code review umano
@@ -507,44 +521,52 @@ Durante i tempi di attesa di Claude Code, usa una chat separata per:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-> 🌟 **Open Source**: Questa guida è open source e cresce con la community!
+Questa guida è open source e cresce con la community italiana di sviluppatori. Ogni contributo migliora l'esperienza di tutti.
 
 **Per contribuire:**
 
-1. 🍴 Fork il repository
-2. 🌿 Crea un branch per la feature
-3. ✍️ Implementa le modifiche
-4. 📫 Apri una Pull Request
+1. Fork il repository
+2. Crea un branch per la feature
+3. Implementa le modifiche
+4. Apri una Pull Request
 
-### 💡 Tipi di Contributi Benvenuti
+### Tipi di Contributi Benvenuti
 
-- 🔬 Nuove tecniche testate
-- 🐛 Correzioni e miglioramenti
-- 📖 Esempi pratici
-- 🌍 Traduzioni
+- Nuove tecniche testate
+- Correzioni e miglioramenti
+- Esempi pratici
+- Traduzioni
 
 ---
 
-## 📜 Licenza
+## Licenza
 
 **MIT License** - Vedi file `LICENSE` per dettagli.
 
-*Usa, modifica, condividi liberamente! 🚀*
+*Usa, modifica, condividi liberamente!*
 
 ---
 
-## 🙏 Crediti
+## Crediti
 
 <div align="center">
 
-**👨‍💻 Autore**: Francesco Mancino  
-**📍 Ubicazione**: Roma, Italia  
-**📧 Contatto**: [mancino22@gmail.com](mailto:mancino22@gmail.com)
+**Autore**: Francesco Mancino  
+**Ubicazione**: Roma, Italia  
+**Contatto**: [mancino22@gmail.com](mailto:mancino22@gmail.com)
 
-**🔗 Link utili:**
+**Link utili:**
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-francesco--mancino--dev-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/francesco-mancino-dev/)
+[![Twitter](https://img.shields.io/badge/Twitter-@freshgr4m-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/freshgr4m)
+[![GitHub](https://img.shields.io/badge/GitHub-Issues-black?style=flat-square&logo=github)](https://github.com/freshgr4m/claude-code-pro/issues)
+
+---
+
+*Made with ❤️ in Italy • Ultima modifica: Gennaio 2025*
+
+</div>ino--dev-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/francesco-mancino-dev/)
 [![Twitter](https://img.shields.io/badge/Twitter-@freshgr4m-1DA1F2?style=flat-square&logo=twitter)](https://twitter.com/freshgr4m)
 [![GitHub](https://img.shields.io/badge/GitHub-Issues-black?style=flat-square&logo=github)](https://github.com/freshgr4m/claude-code-pro/issues)
 
