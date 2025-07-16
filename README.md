@@ -1,4 +1,4 @@
-# Claude Code: Guida Italiana
+# Claude Code: Segreti e Guida Completa per Cursor AI (ITA)
 
 <div align="center">
 
