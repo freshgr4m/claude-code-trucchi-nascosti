@@ -152,28 +152,38 @@ DATABASE_URL=your_database_url
 
 La modalità Plan è il segreto per ottenere risultati perfetti ogni volta. **Regola d'oro**: Usala per OGNI micro-step, non solo per task complessi.
 
-### Attivazione
+### Attivazione - Correzione Importante
 
 <table>
 <tr>
 <td width="50%">
 
-**Shortcut Tastiera**
+**Shortcut Corretto**
 ```bash
-Shift + Tab + Tab
+Shift + Tab (due volte)
 ```
+*Cicla tra: normale → auto-accept → plan mode*
 
 </td>
 <td width="50%">
 
-**Comando Esplicito**
-```bash
-/plan
-```
+**Cosa fa Plan Mode**
+- Claude **non modifica file**
+- **Non esegue comandi** 
+- Presenta solo **piano dettagliato**
+- Chiede **approvazione** prima di eseguire
 
 </td>
 </tr>
 </table>
+
+### Le Tre Modalità di Claude Code
+
+| Modalità | Attivazione | Comportamento | Uso Consigliato |
+|----------|-------------|---------------|------------------|
+| **Normale** | Default | Chiede conferma per ogni azione | Lavoro di precisione |
+| **Auto-accept** | `Shift + Tab` (1 volta) | Esegue senza chiedere permesso | Task ripetitivi sicuri |
+| **Plan Mode** | `Shift + Tab` (2 volte) | Solo pianificazione, nessuna esecuzione | Task complessi |
 
 ### Strategia dei Modelli - Risparmio Garantito
 
@@ -223,13 +233,31 @@ Shift + Tab + Tab
 
 > **Perché funziona**: Sembra perdita di tempo, ma in realtà risparmi ore di debug. Il planning preciso elimina gli errori alla radice.
 
+### Workflow Plan Mode Ottimale
+
+```mermaid
+graph LR
+    A[Shift+Tab x2] --> B[Plan Mode ON]
+    B --> C[Descrivi Task]
+    C --> D[Claude Crea Piano]
+    D --> E[Approvi Piano]
+    E --> F[Esecuzione Automatica]
+    F --> G[Commit & Clear]
+```
+
 ### Esempio Pratico
 
 <details>
 <summary><strong>Creazione API REST (click per espandere)</strong></summary>
 
+**Step 1**: Attiva Plan Mode
+```bash
+# Premi Shift + Tab due volte
+# Vedrai: "plan mode on"
+```
+
+**Step 2**: Descrivi il task
 ```markdown
-# Input in Plan Mode
 "Creo una API REST per gestione utenti con:
 - Autenticazione JWT
 - CRUD operazioni
@@ -238,9 +266,33 @@ Shift + Tab + Tab
 - Documentazione OpenAPI"
 ```
 
-**Risultato**: Claude risponderà con un piano dettagliato step-by-step che potrai approvare prima dell'esecuzione.
+**Step 3**: Approva il piano
+Claude presenterà un piano dettagliato step-by-step. Tu potrai:
+- ✅ Approvare e procedere
+- ❌ Modificare il piano
+- 🔄 Richiedere chiarimenti
+
+**Risultato**: Esecuzione precisa senza errori imprevisti.
 
 </details>
+
+### Shortcut Essenziali
+
+| Comando | Funzione | Quando Usare |
+|---------|----------|--------------|
+| `Shift + Tab` | Cicla tra modalità | Cambio workflow |
+| `Escape` | Interrompe Claude | Correzione immediata |
+| `Escape x2` | Torna a messaggio precedente | Revisione prompt |
+| `Ctrl + R` | Mostra contesto completo | Debug verbose |
+
+### Indicatori Visivi
+
+Claude Code mostra chiaramente la modalità attiva:
+- **Normale**: Nessun indicatore
+- **Auto-accept**: `auto-accept edits on`
+- **Plan mode**: `plan mode on`
+
+> **Critico**: Plan Mode è la chiave per eliminare bug. Usalo intensivamente, non solo per task "grandi".
 
 ---
 
@@ -537,7 +589,7 @@ Voglio usare questo tempo per chattare con te per:
 Aiutami a restare focalizzato e produttivo durante queste pause."
 ```
 
-### Workflow Produttività 4000%
+### Workflow Produttività
 
 **Durante attese di Claude Code:**
 1. 🚫 **NON** prendere il telefono
@@ -753,6 +805,5 @@ Questa guida è open source e cresce con la community italiana di sviluppatori. 
 ---
 
 *Made with ❤️ to Rome • Ultima modifica: Luglio 2025*
-
 
 </div>
