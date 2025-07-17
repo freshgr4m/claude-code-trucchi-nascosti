@@ -181,8 +181,36 @@ Shift + Tab + Tab
 
 | Fase | Modello | Comando | Scopo | Costo |
 |------|---------|---------|-------|-------|
-| **Pianificazione** | Opus | `/mod opus` | Massima precisione | Alto |
-| **Esecuzione** | Sonnet | `/mod sonnet` | Velocità + risparmio | Basso |
+| **Pianificazione** | Opus | `/model opus` | Massima precisione | Alto |
+| **Esecuzione** | Sonnet | `/model sonnet` | Velocità + risparmio | Basso |
+
+### ⚠️ Limitazioni per Piano - Problema Comune
+
+**Problema frequente**: "Perché vedo solo Sonnet e non Opus in Claude Code?"
+
+**Causa**: Le limitazioni dipendono dal tuo piano Claude attivo:
+
+| Piano | Modelli Disponibili | Comando | Prezzo |
+|:---:|:---:|:---:|:---:|
+| **Pro** | 🟡 Solo Sonnet 4 | `/model sonnet` | $20/mese |
+| **Max** | 🟢 Sonnet 4 + Opus 4 | `/model opus` o `/model sonnet` | $100/mese |
+
+### Come Verificare il Tuo Piano
+
+```bash
+# In Claude Code, controlla con:
+/status
+
+# Oppure vai su claude.ai → Settings → Plan
+```
+
+### Soluzioni per Accedere a Opus
+
+1. **📈 Upgrade a Max**: Accesso completo a entrambi i modelli
+2. **💳 Crediti API**: Utilizzo pay-per-use tramite Anthropic Console  
+3. **🔄 Switching automatico**: Max users passano automaticamente a Sonnet quando raggiungono certi limiti
+
+> **⚡ Importante**: Opus consuma ~5x più velocemente dei limiti rispetto a Sonnet. Per utenti Max, Claude Code passa automaticamente da Opus a Sonnet al 50% di utilizzo per preservare il budget.
 
 ### Overuse Plan Mode - La Regola Segreta
 
