@@ -527,8 +527,6 @@ Aiutami a restare focalizzato e produttivo durante queste pause."
 - 📈 **Pianifica crescita** mentre Claude lavora
 - 🧠 **Mantieni focus** invece di disperdere attenzione
 
-> **Testimonianza**: "Da quando uso questa tecnica, ho generato 30+ idee per app nuove che ora sto sviluppando. La produttività è aumentata del 4000%."
-
 ### Gestione delle Distrazioni
 
 <table>
