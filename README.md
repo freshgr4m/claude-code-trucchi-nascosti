@@ -1,6 +1,3 @@
-<a href="https://bentohub.netlify.app/" target="_blank"><img src="https://cloud.appwrite.io/v1/storage/buckets/667d390e003b1971a8be/files/687bba0c00200f95c922/preview?project=667d35ca0017fb21fc6c" /></a>
-
-
 # Claude Code: Segreti e Guida Completa per Cursor AI
 
 <div align="center">
